@@ -167,9 +167,9 @@
 		pinctrl-names = "default";
 
 		led_status_red: led_status_red {
-			label = "blue:system";
+			label = "red:system";
 			gpio = <&tlmm 24 GPIO_ACTIVE_HIGH>;
-			default-state = "on";
+			// default-state = "on";
 		};
 
 		led_status_green: led_status_green {
