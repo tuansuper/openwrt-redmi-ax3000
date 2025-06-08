@@ -1,4 +1,8 @@
 CONFIG_DEFAULT_default-settings-chn=y
+CONFIG_DEFAULT_dnsmasq-full=y
+CONFIG_DEFAULT_ca-bundle=y
+CONFIG_DEFAULT_libc=y
+CONFIG_DEFAULT_luci-compat=y
 
 CONFIG_TARGET_ipq50xx=y
 CONFIG_TARGET_ipq50xx_arm=y
