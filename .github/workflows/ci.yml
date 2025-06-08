@@ -48,10 +48,13 @@ jobs:
         run: |
           pwd
           ls
-          if [ ! -f .config ] ; then
+          if [ ! -f .config.custom ] ; then
             cp .config.default .config
+          else
+            cp .config.custom .config
           fi
-          cat .config
+          # echo .CONFIG content
+          # grep -v '^[[:space:]]*#' .config
           make defconfig
 
       - name: Download
@@ -153,7 +156,12 @@ jobs:
         with:
           name: bin-ipq50xx-arm
           path: bin/targets/ipq50xx/arm/
-
+      
+      - name: List dl and bin directory
+        run: |
+          ls dl
+          ls bin/targets/ipq50xx/arm/
+      
       - name: Tar
         run: |
           tar cvf dl.tar -C dl/ .
