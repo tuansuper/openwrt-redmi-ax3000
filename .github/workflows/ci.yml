@@ -71,7 +71,7 @@ jobs:
 
       - name: Build all
         run: |
-          make -j$(nproc) IGNORE_ERRORS=1
+          make -j$(nproc) IGNORE_ERRORS=1 V=s
 
       - name: Upload bin to artifacts
         uses: actions/upload-artifact@v4
