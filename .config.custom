@@ -20,6 +20,11 @@ CONFIG_MAKE_TOOLCHAIN=y
 CONFIG_ALL_NONSHARED=y
 CONFIG_REPRODUCIBLE_DEBUG_INFO=y
 
+# CONFIG_PACKAGE_libnl-tiny1 is not set
+# CONFIG_PACKAGE_dnsmasq is not set
+CONFIG_PACKAGE_dnsmasq-full=y
+CONFIG_PACKAGE_libnl-tiny2022-05-17=y
+
 CONFIG_PACKAGE_kmod-bonding=y
 CONFIG_PACKAGE_kmod-qca-nss-ecm-standard=y
 CONFIG_PACKAGE_kmod-qca-nss-drv-pppoe=y
@@ -45,7 +50,7 @@ CONFIG_PACKAGE_luci-app-argon-config=y
 CONFIG_PACKAGE_luci-i18n-argon-config-zh-cn=y
 
 
-CONFIG_PACKAGE_dnsmasq-full=y
+
 CONFIG_PACKAGE_libnettle=y
 CONFIG_PACKAGE_libgmp=y
 CONFIG_PACKAGE_kmod-ipt-ipset=y
