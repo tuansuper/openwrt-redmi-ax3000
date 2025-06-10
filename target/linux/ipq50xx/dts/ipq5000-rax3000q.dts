@@ -173,7 +173,7 @@
 		};
 
 		led_status_green: led_status_green {
-			label = "yellow:system";
+			label = "green:system";
 			gpio = <&tlmm 19 GPIO_ACTIVE_HIGH>;
 		};
 
