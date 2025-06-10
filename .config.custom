@@ -1,8 +1,4 @@
-CONFIG_DEFAULT_default-settings-chn=y
-CONFIG_DEFAULT_dnsmasq-full=y
-CONFIG_DEFAULT_ca-bundle=y
-CONFIG_DEFAULT_libc=y
-CONFIG_DEFAULT_luci-compat=y
+CONFIG_HAVE_DOT_CONFIG=y
 
 CONFIG_TARGET_ipq50xx=y
 CONFIG_TARGET_ipq50xx_arm=y
@@ -20,10 +16,8 @@ CONFIG_MAKE_TOOLCHAIN=y
 CONFIG_ALL_NONSHARED=y
 CONFIG_REPRODUCIBLE_DEBUG_INFO=y
 
-# CONFIG_PACKAGE_libnl-tiny1 is not set
-# CONFIG_PACKAGE_dnsmasq is not set
-CONFIG_PACKAGE_dnsmasq-full=y
-CONFIG_PACKAGE_libnl-tiny2022-05-17=y
+CONFIG_PACKAGE_libnl-tiny1=y
+CONFIG_PACKAGE_dnsmasq=y
 
 CONFIG_PACKAGE_kmod-bonding=y
 CONFIG_PACKAGE_kmod-qca-nss-ecm-standard=y
@@ -32,12 +26,12 @@ CONFIG_PACKAGE_kmod-qca-nss-drv-pppoe=y
 CONFIG_PACKAGE_iperf3=y
 
 CONFIG_PACKAGE_luci=y
+CONFIG_DEFAULT_luci-compat=y
 CONFIG_PACKAGE_luci-i18n-base-zh-cn=y
 
 CONFIG_PACKAGE_luci-app-ttyd=y
 CONFIG_PACKAGE_luci-i18n-ttyd-zh-cn=y
 
-CONFIG_DEFAULT_luci-app-filetransfer=y
 CONFIG_PACKAGE_luci-app-filetransfer=y
 CONFIG_PACKAGE_luci-i18n-filetransfer-zh-cn=y
 
@@ -48,51 +42,3 @@ CONFIG_PACKAGE_luci-i18n-wol-zh-cn=y
 CONFIG_PACKAGE_luci-theme-argon=y
 CONFIG_PACKAGE_luci-app-argon-config=y
 CONFIG_PACKAGE_luci-i18n-argon-config-zh-cn=y
-
-
-
-CONFIG_PACKAGE_libnettle=y
-CONFIG_PACKAGE_libgmp=y
-CONFIG_PACKAGE_kmod-ipt-ipset=y
-CONFIG_PACKAGE_kmod-nfnetlink=y
-CONFIG_PACKAGE_libnetfilter-conntrack=y
-CONFIG_PACKAGE_libnfnetlink=y
-CONFIG_PACKAGE_kmod-nf-conntrack-netlink=y
-CONFIG_PACKAGE_libmnl=y
-CONFIG_PACKAGE_coreutils=y
-CONFIG_PACKAGE_coreutils-nohup=y
-CONFIG_PACKAGE_bash=y
-CONFIG_PACKAGE_libncurses=y
-CONFIG_PACKAGE_terminfo=y
-CONFIG_PACKAGE_libreadline=y
-CONFIG_PACKAGE_libncurses=y
-CONFIG_PACKAGE_curl=y
-CONFIG_PACKAGE_libcurl=y
-CONFIG_PACKAGE_libnghttp2=y
-CONFIG_PACKAGE_ca-certificates=y
-CONFIG_PACKAGE_ipset=y
-CONFIG_PACKAGE_libipset=y
-CONFIG_PACKAGE_ip-full=y
-CONFIG_PACKAGE_libbpf0=y
-CONFIG_PACKAGE_libelf1=y
-CONFIG_PACKAGE_libcap-bin=y
-CONFIG_PACKAGE_ruby=y
-CONFIG_PACKAGE_libruby=y
-CONFIG_PACKAGE_ruby-yaml=y
-CONFIG_PACKAGE_ruby-dbm=y
-CONFIG_PACKAGE_libdb=y
-CONFIG_PACKAGE_ruby-pstore=y
-CONFIG_PACKAGE_ruby-digest=y
-CONFIG_PACKAGE_ruby-enc=y
-CONFIG_PACKAGE_ruby-psych=y
-CONFIG_PACKAGE_ruby-bigdecimal=y
-CONFIG_PACKAGE_ruby-date=y
-CONFIG_PACKAGE_ruby-forwardable=y
-CONFIG_PACKAGE_ruby-stringio=y
-CONFIG_PACKAGE_ruby-strscan=y
-CONFIG_PACKAGE_libyaml=y
-CONFIG_PACKAGE_kmod-tun=y
-CONFIG_PACKAGE_unzip=y
-CONFIG_PACKAGE_iptables-mod-tproxy=y
-CONFIG_PACKAGE_kmod-ipt-tproxy=y
-CONFIG_PACKAGE_kmod-inet-diag=y
